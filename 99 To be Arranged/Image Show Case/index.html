@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image show case</title>
+</head>
+<body>
+
+    <div class="div">
+        <img src="Images/Headphone.jpg" alt="">
+        <img src="Images/Keyboard.webp" alt="">
+        <img src="Images/Mobile.webp" alt="">
+        <img src="Images/Smart Watch.webp" alt="">
+    </div>
+    
+</body>
+<style>
+    .div img{
+        filter: saturate(0%);
+        width: 10px;
+        border: 2px solid black;
+        height: 700px;
+        object-fit:cover;
+        border-radius: 12px;
+        transition: all ease 0.4s;
+        cursor: pointer;
+    }
+
+    .div img:hover{
+        filter: saturate(100%);
+        width: 80%;
+        /* height: 100%; */
+        object-fit:contain;
+    }
+</style>
+</html>

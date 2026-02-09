@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipsy Box</title>
+</head>
+
+<body>
+    <a href=""> I Love You </a>
+</body>
+<style>
+    body {
+        background-color: black;
+    }
+
+    a {
+        color: #fffbf1;
+        text-shadow: 0 20px 25px #0909e7, 0 40px 60px #bd1f6e;
+        font-size: 80px;
+        font-weight: bold;
+        text-decoration: none;
+        letter-spacing: -3px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    a:before, a:after {
+        content: "";
+        /* padding: 0.9em 0.4em; */
+        padding: 0.9em 0.4em;
+        position: absolute;
+        left: 50%;
+        width: 50%;
+        top: 50%;
+        display: block;
+        border: 20px solid red;
+        transform: translateX(-50%) translateY(-50%) rotate(0deg);
+        animation: 5s infinite alternate ease-in-out tipsy;
+    }
+
+    a:before {
+        border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+        z-index: -1;
+    }
+
+    a:after {
+        border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
+        box-shadow: 25px 25px 25px rgba(46, 46, 49, 0.8);
+    }
+
+    @keyframes tipsy {
+        0% {
+            transform: translateX(-50%) translateY(-50%) rotate(0deg);
+        }
+        100% {
+            transform: translateX(-50%) translateY(-50%) rotate(310deg);
+            /* transform: translateX(-50%) translateY(-50%) rotate(360deg); */
+        }
+    }
+</style>
+
+</html>

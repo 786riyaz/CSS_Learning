@@ -1,0 +1,57 @@
+.btn{
+    width: 140px;
+    height: 40px;
+    border: 1px solid #333;
+    font-family: "Cinzel", "Times New Roman",serif;
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-top-highlight-color:tranparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    transition: 1s;
+    /* margin: 20px; */
+}
+
+.btn::before, .btn::after {
+    position: absolute;
+    /* background: #eee; */
+    background: #fff;
+    z-index: -1;
+    transition: 1s;
+    content: "";
+}
+
+.btn::before{
+    height: 50px;
+    width: 130px;
+}
+
+.btn::after{
+    height: 30px;
+    width: 150px;
+}
+
+.noselect {
+    user-select: none;
+}
+
+.btn:hover::before {
+    width: 0px;
+    background: #fff;
+}
+
+.btn:hover::after {
+    height: 0px;
+    background: #fff;
+}
+
+.btn:hover{
+    background: #fff;
+}
+
+body{
+    /* background-color: red; */
+}
