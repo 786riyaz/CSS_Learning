@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+div {
+    border: 3px solid red;
+    margin: 2px;
+}
+
+p {
+    margin: 2px;
+    background-color: rgb(181, 89, 89);
+}
+
+.Flex-Container {
+    border: 2px solid green;
+    height: 500px;
+    width: 99%;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    /* flex-wrap: wrap; */
+    /* align-items:center;             Also devides the spaces */
+    align-content: space-around;
+    /* Strech do not works ith if height provided */
+    flex-flow: column wrap;
+}
+
+.Flex-item {
+    width: 100px;
+    height:50px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#Flex-item-1 {
+    background-color: lightblue;
+    /* flex: 2 3 250px; */
+    /* order:9; */
+    /* align-self: flex-end; */
+    /* flex-basis: 200px; */
+}
+
+#Flex-item-2 {
+    background-color: lightcoral;
+    /* flex-shrink: 3; */
+}
+
+#Flex-item-3 {
+    background-color: lightgreen;
+    /* order: 5; */
+}
+
+#Flex-item-4 {
+    background-color: lightpink;
+    /* order:999; */
+}
+
+#Flex-item-5 {
+    background-color: lightslategray;
+    /* order: 7; */
+}
+
+/* 
+#Flex-item-6{  background-color: lightblue;    }
+#Flex-item-7{  background-color: lightcoral;    }
+#Flex-item-8{  background-color: lightgreen;    }
+#Flex-item-9{  background-color: lightpink;    }
+#Flex-item-0{  background-color: lightslategray;    }
+ */

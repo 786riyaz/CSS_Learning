@@ -1,0 +1,13 @@
+Text Shadow :::::::::::
+https://www.w3schools.com/cssref/css3_pr_text-shadow.php
+
+Syntax ::: 
+text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;
+
+------------------------------------------------------------------------------------------
+
+Box Shadow :::::::::::::::::::::
+https://www.w3schools.com/cssref/css3_pr_box-shadow.php
+
+Syntax ::: 
+box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;

@@ -1,0 +1,32 @@
+.container{
+    border : 5px solid red;
+    margin:20px;
+    padding: 20px;
+    font-weight: 900;
+    font-size: 50px;
+    background-color: aqua;
+    text-shadow: 2px 2px red;
+}
+.container2{
+    border : 5px solid green;
+    margin:20px;
+    padding: 20px;
+    font-weight: 900;
+    font-size: 50px;
+    background-color: red;
+    text-shadow: -2px -2px rgb(16, 130, 94);
+}
+.container3{
+    border : 5px solid red;
+    margin:30px;
+    padding: 30px;
+    font-weight: 900;
+    font-size: 90px;
+    background-color: rgb(169, 222, 116);
+    text-shadow: 10px 10px 10px red;
+}
+
+body{
+    background-color: black;
+    display: flex;
+}
