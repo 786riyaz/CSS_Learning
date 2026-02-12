@@ -1,2 +1,88 @@
+inline vs internal vs external vs important
 Normal HTML vs HTML5
 Normal CSS vs CSS3
+
+different pseudo classes
+different Pseudo-Elements
+overflow
+margin collapse
+vh
+vw
+fr unit
+width vs min-width vs max-width
+height vs min-height vs max-height
+CSS variables
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111;
+    color: #fff;
+  }
+}
+
+**Block__Element--Modifier**
+
+```css
+.card {}
+.card__title {}
+.card--active {}
+
+### Attribute Selectors
+input[type="text"] 
+### Starts / Ends / Contains
+```css
+a[href^="https"] { color: green; }
+a[href$=".pdf"] { color: red; }
+a[href*="blog"] { font-weight: bold; }
+
+## 2️⃣ `:not()` and `:is()`
+button:not(.primary)
+:is(h1, h2, h3)
+
+clamp() Responsive Without Media Queries
+h1 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+}
+Meaning:
+* Minimum: `1.5rem`
+* Preferred: `4vw`
+* Maximum: `3rem`
+
+---
+
+`min()` & `max()`
+.container {
+  width: min(100%, 1200px);
+}
+📌 Prevents overflow on large screens
+
+---
+
+Container Queries (Modern CSS – Conceptual)
+@container (min-width: 400px) {
+  .card {
+    flex-direction: row;
+  }
+}
+📌 Styles based on **container size**, not viewport
+📌 New but powerful
+
+---
+
+Custom Scrollbars
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+⚠️ Mostly WebKit browsers
+
+---
+
+Print Styles
+@media print {
+  nav, footer {
+    display: none;
+  }
+}
