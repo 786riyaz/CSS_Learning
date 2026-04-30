@@ -2,3 +2,5 @@ can we use bootstrap and tailwind in single project ?
 CSS Variables
 Focus vs active
 CSS Calculate
+
+CSS cubic-bezier() fuction
